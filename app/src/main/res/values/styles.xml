@@ -1,0 +1,51 @@
+<resources>
+    <style name="LightYellow" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#fafafa</item>
+        <item name="colorPrimaryDark">#252525</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="cardBGColor">#ffffff</item>
+        <item name="cardBGBGColor">#fafafa</item>
+        <item name="backgroundColor">#fafafa</item>
+        <item name="borderColor">#dddddd</item>
+        <item name="seekBack">#DFFDDC00</item>
+        <item name="tint">#252525</item>
+        <item name="headerText">#292929</item>
+        <item name="android:textColor">#252525</item>
+        <item name="rippleCLR">#bbbbbb</item>
+        <item name="BGCLR">#50000000</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="DarkYellow" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#191919</item>
+        <item name="colorPrimaryDark">#252525</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="cardBGColor">#424242</item>
+        <item name="cardBGBGColor">#303030</item>
+        <item name="backgroundColor">#252525</item>
+        <item name="borderColor">@android:color/transparent</item>
+        <item name="tint">#fafafa</item>
+        <item name="seekBack">#DFFDDC00</item>
+        <item name="headerText">@color/colorAccent</item>
+        <item name="android:textColor">#fafafa</item>
+        <item name="rippleCLR">#757575</item>
+        <item name="BGCLR">#50ffffff</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Dark</item>
+    </style>
+
+    <style name="CustomDialogue" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:minWidth" type="dimen">600dp</item>
+        <item name="android:layout_margin" type="dimen">10dp</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+</resources>

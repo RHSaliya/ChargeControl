@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BatteryView">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="cardBGColor" format="color"/>
+        <attr name="cardBGBGColor" format="color"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="seekBack" format="color"/>
+        <attr name="tint" format="color"/>
+        <attr name="android:textColor" format="color"/>
+        <attr name="headerText" format="color"/>
+        <attr name="popupTheme" format="reference"/>
+        <attr name="rippleCLR" format="color"/>
+        <attr name="BGCLR" format="color"/>
+    </declare-styleable>
+</resources>
