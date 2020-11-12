@@ -56,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
     private Button btnAction, btnApply;
     private int i;
     private TextView chargeStatusTV, chargeSpeedTV, chargeTempTV;
-    private BatteryBroadcast batteryBroadcast = new BatteryBroadcast();
+    private final BatteryBroadcast batteryBroadcast = new BatteryBroadcast();
     private BatteryManager batteryManager;
     private String start, stop;
     private BatteryMeterView batteryMeterView;
     private FrameLayout aboutFrame;
-    private Handler handler = new Handler();
+    private final Handler handler = new Handler();
     private boolean isCharging;
     private boolean doubleBackPressFlag = false;
 
@@ -411,7 +411,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 aboutFrame.setVisibility(View.VISIBLE);
                 aboutFrame.setAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.slideup));
-                new Handler().postDelayed(new Runnable() {
+                handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         ValueAnimator colorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), Color.TRANSPARENT, getResources().getColor(R.color.BGCOLOR));
